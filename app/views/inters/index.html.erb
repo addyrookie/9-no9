@@ -1,0 +1,13 @@
+<h1>Internazionale Milano</h1>
+  <div id = "latest_news" >
+  <h3>Recent Updates </h3>
+ <ul> 
+  <%= will_paginate @feed_list %>
+  <% for entry in @feed_list%>
+     <li> <%= link_to h(entry.name) , entry.url %>
+          <%= entry.summary %>
+     </li>
+    <% end %>
+    <%= will_paginate @feed_list %>   
+  </ul>
+</div>

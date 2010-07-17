@@ -1,0 +1,2 @@
+module KakasHelper
+end

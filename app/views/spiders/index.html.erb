@@ -1,0 +1,22 @@
+<h1>Combined Inter Milan and AC Milan News</h1>
+<h2>Inter Headlines </h2>
+<div>
+<% for news_item in @inter_items %>
+<div>
+<%= news_item.name %>
+<%= news_item.summary %>
+</div>
+<% end %>
+</div>
+
+<h2>Milan Headlines </h2>
+<div>
+<% for news_item in @milan_items %>
+<div>
+<%= news_item.name %>
+<%= news_item.summary %>
+</div>
+<% end %>
+</div>
+
+

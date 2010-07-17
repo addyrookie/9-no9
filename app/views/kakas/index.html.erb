@@ -1,0 +1,14 @@
+<h1>AC Milan </h1>
+ <div id = "latest_news" >
+  <h3>Recent Updates </h3>
+  <%= will_paginate @milan_list %>
+ <ul> 
+  <% for entry in @milan_list %>
+     <li> <%= link_to h(entry.name) , entry.url %>
+          <%= entry.summary %>
+     </li>
+    <% end %>
+     <%= will_paginate @milan_list %>      
+  </ul>
+</div>
+
